@@ -7,8 +7,8 @@ export default function router() {
         <Routes>
             {/* <Route path='*' element={<Navigate to="/404" replace />} />
             <Route path="/404" element={<My404Component />} /> */}
-            <Route path='/home' element={<Navigate to="/" replace />} />
-            <Route path="/" element={<MainpageCon />} />
+            <Route path='/mainpage/home' element={<Navigate to="/" replace />} />
+            <Route path="/mainpage/" element={<MainpageCon />} />
         </Routes>
     )
 }

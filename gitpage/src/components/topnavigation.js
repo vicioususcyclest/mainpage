@@ -52,7 +52,7 @@ export default function Topnavigation() {
             <List>
                 {navItems.map((item, i) => (
                     <ListItem key={item} disablePadding>
-                        <Link to={"/" + item.toLowerCase().replaceAll(' ', '')} style={{ textDecoration: 'none' }} key={item}>
+                        <Link to={"/mainpage/" + item.toLowerCase().replaceAll(' ', '')} style={{ textDecoration: 'none' }} key={item}>
                             <ListItemButton sx={{ textAlign: 'center', color: 'black' }} >
                                 <ListItemText primary={item} />
 
@@ -89,7 +89,7 @@ export default function Topnavigation() {
                             <MenuIcon />
                         </IconButton>
                         <Grid container sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} >
-                            <Link to={"/"} style={{ textDecoration: 'none' }}>
+                            <Link to={"/mainpage/"} style={{ textDecoration: 'none' }}>
                                 <IconButton
                                     edge="start"
                                     sx={{ mr: 2, color: '#FFF' }}
@@ -107,7 +107,7 @@ export default function Topnavigation() {
 
                         <Grid sx={{ display: { xs: 'none', sm: 'block' } }}>
                             {navItems.map((item) => (
-                                <Link to={"/" + item.toLowerCase().replaceAll(' ', '')} style={{ textDecoration: 'none' }} key={item}>
+                                <Link to={"/mainpage/" + item.toLowerCase().replaceAll(' ', '')} style={{ textDecoration: 'none' }} key={item}>
                                     <Button sx={{ color: '#fff' }}>
                                         {item}
                                     </Button>
